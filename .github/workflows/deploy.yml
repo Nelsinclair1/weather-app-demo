@@ -23,13 +23,13 @@ jobs:
           dotnet-version: '9.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore WeatherApp/WeatherApp.csproj
+        run: dotnet restore Weatherapp/Weatherapp.csproj
 
       - name: Build application
-        run: dotnet build WeatherApp/WeatherApp.csproj --configuration Release --no-restore
+        run: dotnet build Weatherapp/Weatherapp.csproj --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test WeatherApp/WeatherApp.csproj --no-build --verbosity normal
+        run: dotnet test Weatherapp/Weatherapp.csproj --no-build --verbosity normal
 
       - name: Azure Login
         uses: azure/login@v1
