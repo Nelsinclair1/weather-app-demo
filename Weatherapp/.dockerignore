@@ -1,0 +1,31 @@
+# Build outputs
+bin/
+obj/
+out/
+
+# IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# Docker files
+Dockerfile
+Dockerfile.*
+.dockerignore
+
+# Logs
+*.log
+logs/
