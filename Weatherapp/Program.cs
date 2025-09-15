@@ -29,8 +29,8 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 // Define API endpoints
 app.MapGet("/", () => new
 {
-    Message = "Hurray! Welcome You to Weather App!",
-    Version = "1.0.0",
+    Message = "Hurray! Welcome to the Updated Weather App!",
+    Version = "1.1.0",
     Environment = app.Environment.EnvironmentName,
     Timestamp = DateTime.UtcNow
 })
