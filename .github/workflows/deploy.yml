@@ -35,10 +35,15 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          # Make sure that AZURE_CREDENTIALS is defined in your repository secrets.
+          # If your secret uses a different name, replace AZURE_CREDENTIALS with the correct secret key.
+
+      - name: Set ACR_NAME environment variable
+        run: echo "ACR_NAME=${{ secrets.ACR_NAME }}" >> $GITHUB_ENV
 
       - name: Login to Azure Container Registry
         run: |
-          az acr login --name ${{ secrets.ACR_NAME }}
+          az acr login --name $ACR_NAME
 
       - name: Set IMAGE_NAME environment variable
         run: echo "IMAGE_NAME=weather-app" >> $GITHUB_ENV
