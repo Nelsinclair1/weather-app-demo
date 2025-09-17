@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("66793347-5b9f-4fe4-9ec7-b26287758bdf")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Weatherapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e0b107aadf4f1e1e97666b05f6942f419ddd0af")]
 [assembly: System.Reflection.AssemblyProductAttribute("Weatherapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Weatherapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

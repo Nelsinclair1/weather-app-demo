@@ -1,0 +1,9 @@
+bin/
+obj/
+*.user
+*.swp
+*.suo
+*.userprefs
+.vscode/
+.env
+secrets.json
